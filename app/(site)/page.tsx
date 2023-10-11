@@ -11,7 +11,10 @@ export default function Home() {
     overflow-y-auto
     '>
       <Header>
-        Header
+        <div className="mb-2">
+          <h1 className="text-white text-3xl font-semibold">Welcome back</h1>
+
+        </div>
       </Header>
     </div>
   )
