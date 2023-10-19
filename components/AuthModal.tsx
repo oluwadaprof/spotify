@@ -35,7 +35,7 @@ const onChange = (open: boolean)=>{
     <Modal
       title="Welcome back"
       description="Login to your account"
-      isOpen
+      isOpen={isOpen}
       onChange={onChange}
     >
       <Auth theme="dark" magicLink providers={['github']} supabaseClient={supabaseClient} appearance={{
