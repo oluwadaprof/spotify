@@ -2,13 +2,13 @@
 
 import React from 'react'
 import { Song } from '@/types'
-import SongItem from './SongItem'
+import SongItem from '../../../components/SongItem'
 
-interface PageContentPros {
+interface PageContentProps {
     songs: Song[]
 }
 
-const PageContent: React.FC<PageContentPros> = ({songs}) => {
+const PageContent: React.FC<PageContentProps> = ({songs}) => {
     if(songs.length === 0){
         return (
             <div className='mt-4 text-neutral-400'>
